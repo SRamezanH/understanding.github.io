@@ -1,0 +1,21 @@
+baseURL = 'https://understanding.github.io/'
+languageCode = 'fa-IR'
+defaultContentLanguage = 'fa'
+title = 'فهمیدن'
+enableRobotsTXT = true
+
+[params]
+  description = 'تلاشی برای فهمیدن و نوشتن'
+  author = 'SRamezanH'
+
+[languages]
+  [languages.fa]
+    languageName = 'فارسی'
+    languageDirection = 'rtl'
+    weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Allow raw HTML in Markdown (embeds, custom markup).
+      unsafe = true

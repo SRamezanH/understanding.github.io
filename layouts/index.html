@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ with $posts.ByDate.Reverse }}
+    <ul class="post-list">
+      {{ range . }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p class="empty">هنوز نوشته‌ای منتشر نشده است.</p>
+  {{ end }}
+{{ end }}
