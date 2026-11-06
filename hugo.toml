@@ -19,3 +19,5 @@ enableRobotsTXT = true
     [markup.goldmark.renderer]
       # Allow raw HTML in Markdown (embeds, custom markup).
       unsafe = true
+
+theme = ['PaperMod']
