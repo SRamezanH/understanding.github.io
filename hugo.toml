@@ -1,17 +1,14 @@
-baseURL = 'https://understanding.github.io/'
-languageCode = 'fa-IR'
+baseURL = 'https://sramezanh.github.io/understanding.github.io/'
+locale = 'fa-IR'
 defaultContentLanguage = 'fa'
 title = 'فهمیدن'
 enableRobotsTXT = true
-
-[params]
-  description = 'تلاشی برای فهمیدن و نوشتن'
-  author = 'SRamezanH'
+theme = ['PaperMod']
 
 [languages]
   [languages.fa]
-    languageName = 'فارسی'
-    languageDirection = 'rtl'
+    label = 'فارسی'
+    direction = 'rtl'
     weight = 1
 
 [markup]
@@ -20,4 +17,41 @@ enableRobotsTXT = true
       # Allow raw HTML in Markdown (embeds, custom markup).
       unsafe = true
 
-theme = ['PaperMod']
+[params]
+  description = 'تلاشی برای فهمیدن و نوشتن'
+  author = 'SRamezanH'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = false
+
+  [params.homeInfoParams]
+    Title = 'فهمیدن'
+    Content = 'تلاشی برای فهمیدن و نوشتن'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'نوشته‌ها'
+    url = 'posts/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'برچسب‌ها'
+    url = 'tags/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'آرشیو'
+    url = 'archives/'
+    weight = 30
